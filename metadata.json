@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Agenda Quaderno Digitale - Tavolino delle Competenze Italia",
+  "description": "Quaderno digitale per il Tavolino delle Competenze Italia con registro anagrafico della community, gestione contatti e qualifiche, ricerca rapida, backup cloud automatico ed esportazione in PDF e CSV.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

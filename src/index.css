@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-serif-italian {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
+
+/* Notebook textures */
+.notebook-paper {
+  background-color: #faf9f5;
+  background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 100% 26px;
+}
+
+.notebook-grid {
+  background-color: #fbfbf8;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Print Layout for physical printing of the Agenda / Quaderno */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  header, aside, .no-print {
+    display: none !important;
+  }
+  
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  table {
+    width: 100% !important;
+    font-size: 9pt !important;
+  }
+
+  th, td {
+    padding: 4px 6px !important;
+    border: 1px solid #d1d5db !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
